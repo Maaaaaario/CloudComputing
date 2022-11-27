@@ -1,6 +1,7 @@
 package com.cloudcomputing.controller;
 
 
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import org.springframework.web.bind.annotation.RestController;
@@ -14,8 +15,12 @@ import org.springframework.web.bind.annotation.RestController;
  * @since 2022-11-25
  */
 @RestController
-@RequestMapping("/userEntity")
 public class UserController {
+
+    @PostMapping("/userEntity")
+    public String hello(){
+        return "这是一个剧本杀小程序";
+    }
 
 }
 

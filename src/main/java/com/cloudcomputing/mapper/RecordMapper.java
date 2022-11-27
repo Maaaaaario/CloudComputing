@@ -1,6 +1,6 @@
 package com.cloudcomputing.mapper;
 
-import com.cloudcomputing.entity.UserEntity;
+import com.cloudcomputing.entity.RecordEntity;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import org.apache.ibatis.annotations.Mapper;
 
@@ -9,11 +9,10 @@ import org.apache.ibatis.annotations.Mapper;
  *  Mapper 接口
  * </p>
  *
- * @author QihangYin
- * @since 2022-11-25
+ * @author Qihang Yin
+ * @since 2022-11-26
  */
 
 @Mapper
-public interface UserMapper extends BaseMapper<UserEntity> {
-
+public interface RecordMapper extends BaseMapper<RecordEntity> {
 }
