@@ -1,15 +1,14 @@
 package com.cloudcomputing.entity;
 
-import com.baomidou.mybatisplus.annotation.TableName;
 import com.baomidou.mybatisplus.annotation.IdType;
-
-import java.time.LocalDate;
-import java.time.LocalTime;
-import java.util.Date;
 import com.baomidou.mybatisplus.annotation.TableId;
-import java.io.Serializable;
+import com.baomidou.mybatisplus.annotation.TableName;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
+
+import java.io.Serializable;
+import java.time.LocalDate;
+import java.time.LocalTime;
 
 /**
  * <p>
@@ -21,22 +20,28 @@ import lombok.EqualsAndHashCode;
  */
 @Data
 @EqualsAndHashCode(callSuper = false)
-@TableName("record")
-public class RecordEntity implements Serializable {
+@TableName("player")
+public class PlayerEntity implements Serializable {
 
     private static final long serialVersionUID = 1L;
 
     @TableId(value = "record_id", type = IdType.AUTO)
     private Integer recordId;
 
-    private Integer id;
+    private Integer player1;
 
-    private Integer theme;
+    private Integer player2;
 
-    private LocalDate date;
+    private Integer player3;
 
-    private LocalTime time;
+    private Integer player4;
 
-    private String comment;
+    private Integer player5;
+
+    private Integer player6;
+
+    private Integer player7;
+
+    private Integer player8;
 
 }

@@ -6,5 +6,5 @@ import org.springframework.stereotype.Service;
 
 public interface PostBc {
 
-    public String post(String id, Theme theme, String date, String time, String comment);
+    String post(String id, Theme theme, String date, String time, String comment);
 }
