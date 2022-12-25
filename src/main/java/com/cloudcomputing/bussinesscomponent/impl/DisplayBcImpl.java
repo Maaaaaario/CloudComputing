@@ -31,7 +31,9 @@ public class DisplayBcImpl implements DisplayBc {
     public Page<RecordEntity> get(Theme theme, String date, Integer current, Integer size) {
 
         LambdaQueryWrapper<RecordEntity> wrapper = new LambdaQueryWrapper<>();
-        wrapper.eq(RecordEntity::getTheme, theme.getCode());
+        if (theme != Theme.NOTSPECIFIED) {
+            wrapper.eq(RecordEntity::getTheme, theme.getCode());
+        }
 
         if (StringUtils.isNotEmpty(date)) {
             wrapper.eq(RecordEntity::getDate, LocalDate.parse(date));

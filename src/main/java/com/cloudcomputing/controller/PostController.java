@@ -42,6 +42,7 @@ public class PostController {
 
     @PostMapping("/join")
     public String join(String id, String gameId) {
+
         return participateBc.join(id, gameId);
     }
 }
